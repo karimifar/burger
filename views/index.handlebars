@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                {{#each burgers}}
+                    {{#unless devoured }}
+                        <div>
+                            <li>{{burgerName}}</li>
+                            <button class="devBtn btn-primary btn" data-id={{id}} >Devour</button>
+                        </div>
+                    {{/unless}}
+                {{/each}}
+
+            </ul>
+
+        </div>
+        <div class="col-md-4">
+            <h1> Eat The Burger!</h1>
+            <input id="userInput" type="text" placeholder="Burger Name">
+            <button id="submit" class="submitBtn btn-primary btn">Submit</button>
+
+        </div>
+        <div class="col-md-4">
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li>{{burgerName}}</li>
+                    {{/if}}
+                {{/each}}
+
+            </ul>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
