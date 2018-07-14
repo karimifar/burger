@@ -1,4 +1,4 @@
-#Burgers
+# Burgers
 
 This is a very basic CRUD app. The user can create a burger by submiting a text input and then Devour it using the button next to it. All tha data is saved in a sql datatbase and gets retrieved on each change.
 
